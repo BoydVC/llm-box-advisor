@@ -1,0 +1,1283 @@
+{
+ "generatedAt": "2026-10-10T13:18-04:00",
+ "source": "/workspace/tokenmax/bot-island/data/fleet.json",
+ "sourceGeneratedAt": "2026-10-07T19:55:50.003750Z",
+ "botCount": 16,
+ "window": {
+  "start": "2026-08-20",
+  "end": "2026-09-16",
+  "days": 28,
+  "note": "Per-tool audit events were logged densely only in this window; later days only have output files, so they are excluded from rates."
+ },
+ "measured": {
+  "stepsInWindow": 3538,
+  "stepsPerDayMean": 126.4,
+  "stepsPerDayMedian": 94.5,
+  "stepsPerDayP90": 319,
+  "stepsPerDayMax": 347,
+  "daily": [
+   {
+    "date": "2026-08-20",
+    "steps": 345
+   },
+   {
+    "date": "2026-08-21",
+    "steps": 63
+   },
+   {
+    "date": "2026-08-22",
+    "steps": 58
+   },
+   {
+    "date": "2026-08-23",
+    "steps": 5
+   },
+   {
+    "date": "2026-08-24",
+    "steps": 112
+   },
+   {
+    "date": "2026-08-25",
+    "steps": 124
+   },
+   {
+    "date": "2026-08-26",
+    "steps": 160
+   },
+   {
+    "date": "2026-08-27",
+    "steps": 126
+   },
+   {
+    "date": "2026-08-28",
+    "steps": 95
+   },
+   {
+    "date": "2026-08-29",
+    "steps": 16
+   },
+   {
+    "date": "2026-08-30",
+    "steps": 15
+   },
+   {
+    "date": "2026-08-31",
+    "steps": 55
+   },
+   {
+    "date": "2026-09-01",
+    "steps": 72
+   },
+   {
+    "date": "2026-09-02",
+    "steps": 75
+   },
+   {
+    "date": "2026-09-03",
+    "steps": 57
+   },
+   {
+    "date": "2026-09-04",
+    "steps": 94
+   },
+   {
+    "date": "2026-09-05",
+    "steps": 12
+   },
+   {
+    "date": "2026-09-06",
+    "steps": 9
+   },
+   {
+    "date": "2026-09-07",
+    "steps": 73
+   },
+   {
+    "date": "2026-09-08",
+    "steps": 152
+   },
+   {
+    "date": "2026-09-09",
+    "steps": 241
+   },
+   {
+    "date": "2026-09-10",
+    "steps": 319
+   },
+   {
+    "date": "2026-09-11",
+    "steps": 200
+   },
+   {
+    "date": "2026-09-12",
+    "steps": 151
+   },
+   {
+    "date": "2026-09-13",
+    "steps": 179
+   },
+   {
+    "date": "2026-09-14",
+    "steps": 347
+   },
+   {
+    "date": "2026-09-15",
+    "steps": 326
+   },
+   {
+    "date": "2026-09-16",
+    "steps": 57
+   }
+  ],
+  "byType": [
+   [
+    "mcp_tool_call",
+    1752
+   ],
+   [
+    "shell_command",
+    1304
+   ],
+   [
+    "browser_navigation",
+    419
+   ],
+   [
+    "computer_use_session",
+    63
+   ]
+  ],
+  "byApp": [
+   [
+    "Shell",
+    1244
+   ],
+   [
+    "Calendar",
+    457
+   ],
+   [
+    "Slack",
+    445
+   ],
+   [
+    "Browser",
+    419
+   ],
+   [
+    "Gmail",
+    284
+   ],
+   [
+    "Gmail (Miranda)",
+    240
+   ],
+   [
+    "Drive",
+    162
+   ],
+   [
+    "Notion",
+    138
+   ],
+   [
+    "Computer use",
+    63
+   ],
+   [
+    "Boyd's PC",
+    60
+   ],
+   [
+    "X",
+    20
+   ],
+   [
+    "Composio",
+    4
+   ],
+   [
+    "cursor",
+    1
+   ],
+   [
+    "update_state",
+    1
+   ]
+  ],
+  "byHourET": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   628,
+   231,
+   445,
+   741,
+   57,
+   0,
+   22,
+   15,
+   30,
+   38,
+   74,
+   8,
+   34,
+   108,
+   131,
+   703,
+   120,
+   143,
+   10
+  ],
+  "byDowHourET": [
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    44,
+    69,
+    109,
+    221,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    35,
+    8,
+    17,
+    13,
+    12,
+    41,
+    16,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    63,
+    56,
+    87,
+    127,
+    41,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    48,
+    84,
+    72,
+    71,
+    25,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    132,
+    25,
+    54,
+    149,
+    0,
+    0,
+    5,
+    0,
+    27,
+    0,
+    0,
+    0,
+    0,
+    12,
+    2,
+    126,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    110,
+    35,
+    68,
+    135,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    35,
+    7,
+    297,
+    32,
+    118,
+    10
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    74,
+    46,
+    100,
+    109,
+    16,
+    0,
+    0,
+    15,
+    1,
+    0,
+    0,
+    0,
+    17,
+    0,
+    7,
+    67,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    87,
+    0,
+    9,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    38,
+    31,
+    0,
+    0,
+    0,
+    12,
+    60,
+    0,
+    0,
+    0
+   ],
+   [
+    0,
+    0,
+    0,
+    0,
+    0,
+    118,
+    0,
+    18,
+    0,
+    0,
+    0,
+    17,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    7,
+    40,
+    0,
+    0,
+    0
+   ]
+  ],
+  "peakHourET": 8,
+  "peakMinuteSteps": 50,
+  "peakMinute": "2026-08-20 22:18",
+  "toolLatencyMsMedian": 608,
+  "concurrentBots10minHist": [
+   [
+    1,
+    184
+   ],
+   [
+    2,
+    26
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    4,
+    2
+   ]
+  ],
+  "maxConcurrentBots10min": 4,
+  "agentMessages": 223,
+  "boydMessages": 113
+ },
+ "routines": [
+  {
+   "bot": "Boyd Family Times (archive)",
+   "botId": "4b4afba1-ebe0-403c-8502-451e00717b07",
+   "name": "Morning Boyd Family Times",
+   "cron": "0 5 * * *",
+   "schedule": "5:00 AM ET, every day",
+   "enabled": true,
+   "runsPerWeek": 7,
+   "observedRuns": 8,
+   "okRuns": 8,
+   "medianMinutes": 15.5,
+   "p90Minutes": 16.3,
+   "firstRun": "2026-09-09T09:03:31.475000Z",
+   "lastRun": "2026-09-16T09:15:26.084000Z"
+  },
+  {
+   "bot": "Michael",
+   "botId": "4feb1fc5-075b-4294-a694-3fa562e5785b",
+   "name": "Jim daily interest note",
+   "cron": "0 20 * * *",
+   "schedule": "8:00 PM ET, every day",
+   "enabled": false,
+   "runsPerWeek": 0,
+   "observedRuns": 17,
+   "okRuns": 17,
+   "medianMinutes": 4.1,
+   "p90Minutes": 14.1,
+   "firstRun": "2026-08-22T00:01:51.791000Z",
+   "lastRun": "2026-09-08T00:26:46.392000Z"
+  },
+  {
+   "bot": "Michael",
+   "botId": "4feb1fc5-075b-4294-a694-3fa562e5785b",
+   "name": "Morning attention brief",
+   "cron": "0 8 * * 1-5",
+   "schedule": "8:00 AM ET, weekdays",
+   "enabled": false,
+   "runsPerWeek": 0,
+   "observedRuns": 13,
+   "okRuns": 13,
+   "medianMinutes": 2.0,
+   "p90Minutes": 3.3,
+   "firstRun": "2026-08-21T12:04:44.597000Z",
+   "lastRun": "2026-09-08T12:49:50.476000Z"
+  },
+  {
+   "bot": "Oscar",
+   "botId": "5ea76ec0-2e44-46be-993a-11bc6ba30958",
+   "name": "Due-soon bills and money surprises",
+   "cron": "45 8 * * 1-5",
+   "schedule": "8:45 AM ET, weekdays",
+   "enabled": true,
+   "runsPerWeek": 5,
+   "observedRuns": 2,
+   "okRuns": 2,
+   "medianMinutes": 6.8,
+   "p90Minutes": 5.1,
+   "firstRun": "2026-09-14T12:51:28.101000Z",
+   "lastRun": "2026-09-15T13:00:04.440000Z"
+  },
+  {
+   "bot": "Oscar",
+   "botId": "5ea76ec0-2e44-46be-993a-11bc6ba30958",
+   "name": "Watch for Kia Finance statement",
+   "cron": "31 8 * * 1-5",
+   "schedule": "8:31 AM ET, weekdays",
+   "enabled": true,
+   "runsPerWeek": 5,
+   "observedRuns": 16,
+   "okRuns": 16,
+   "medianMinutes": 0.9,
+   "p90Minutes": 1.4,
+   "firstRun": "2026-08-21T12:37:00.026000Z",
+   "lastRun": "2026-09-15T13:19:04.832000Z"
+  },
+  {
+   "bot": "Oscar",
+   "botId": "5ea76ec0-2e44-46be-993a-11bc6ba30958",
+   "name": "Weekly household cash snapshot",
+   "cron": "15 8 * * 1",
+   "schedule": "8:15 AM ET, Mondays",
+   "enabled": true,
+   "runsPerWeek": 1,
+   "observedRuns": 1,
+   "okRuns": 1,
+   "medianMinutes": 3.1,
+   "p90Minutes": 3.1,
+   "firstRun": "2026-09-14T12:39:42.836000Z",
+   "lastRun": "2026-09-14T12:39:42.836000Z"
+  },
+  {
+   "bot": "Ryan",
+   "botId": "6a33ea82-5497-43fa-a644-aebed89a6bf6",
+   "name": "Weekly idea digest",
+   "cron": "0 7 * * 1",
+   "schedule": "7:00 AM ET, Mondays",
+   "enabled": true,
+   "runsPerWeek": 1,
+   "observedRuns": 1,
+   "okRuns": 1,
+   "medianMinutes": 2.1,
+   "p90Minutes": 2.1,
+   "firstRun": "2026-09-14T11:07:55.841000Z",
+   "lastRun": "2026-09-14T11:07:55.841000Z"
+  },
+  {
+   "bot": "Dr. EggBot",
+   "botId": "759c205a-40a5-4e74-9620-3c04714824f4",
+   "name": "routine-healthcheck",
+   "cron": "35 6 * * 1",
+   "schedule": "6:35 AM ET, Mondays",
+   "enabled": true,
+   "runsPerWeek": 1,
+   "observedRuns": 2,
+   "okRuns": 2,
+   "medianMinutes": 1.6,
+   "p90Minutes": 1.2,
+   "firstRun": "2026-09-07T10:43:30.257000Z",
+   "lastRun": "2026-09-14T10:39:25.234000Z"
+  },
+  {
+   "bot": "Dr. EggBot",
+   "botId": "759c205a-40a5-4e74-9620-3c04714824f4",
+   "name": "transcript-healthcheck",
+   "cron": "30 6 * * 1-5",
+   "schedule": "6:30 AM ET, weekdays",
+   "enabled": true,
+   "runsPerWeek": 5,
+   "observedRuns": 7,
+   "okRuns": 7,
+   "medianMinutes": 5.5,
+   "p90Minutes": 5.5,
+   "firstRun": "2026-09-07T10:31:30.146000Z",
+   "lastRun": "2026-09-15T10:40:39.471000Z"
+  },
+  {
+   "bot": "Vic Tutor",
+   "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
+   "name": "Vic weeknight homework check-in",
+   "cron": "15 18 * * *",
+   "schedule": "6:15 PM ET, every day",
+   "enabled": true,
+   "runsPerWeek": 7,
+   "observedRuns": 7,
+   "okRuns": 7,
+   "medianMinutes": 0.9,
+   "p90Minutes": 1.2,
+   "firstRun": "2026-09-09T23:20:36.962000Z",
+   "lastRun": "2026-09-15T23:14:01.810000Z"
+  },
+  {
+   "bot": "Brief",
+   "botId": "84ee99ac-e314-4642-a27b-89b81a591547",
+   "name": "Morning attention brief",
+   "cron": "0 8 * * 1-5",
+   "schedule": "8:00 AM ET, weekdays",
+   "enabled": true,
+   "runsPerWeek": 5,
+   "observedRuns": 3,
+   "okRuns": 3,
+   "medianMinutes": 2.2,
+   "p90Minutes": 2.2,
+   "firstRun": "2026-09-09T12:07:06.535000Z",
+   "lastRun": "2026-09-14T12:43:12.947000Z"
+  },
+  {
+   "bot": "Jim",
+   "botId": "9abbfaf4-f401-4e70-8619-da598173399a",
+   "name": "Bill Simmons Sunday 107 fifth pick",
+   "cron": "0 11,15 * * 0",
+   "schedule": "11:00 AM, 3:00 PM ET, Sundays",
+   "enabled": true,
+   "runsPerWeek": 2,
+   "observedRuns": 2,
+   "okRuns": 2,
+   "medianMinutes": 2.3,
+   "p90Minutes": 1.8,
+   "firstRun": "2026-09-13T15:18:40.416000Z",
+   "lastRun": "2026-09-13T19:10:37.422000Z"
+  },
+  {
+   "bot": "Jim",
+   "botId": "9abbfaf4-f401-4e70-8619-da598173399a",
+   "name": "Daily podcast listen brief",
+   "cron": "0 7 * * *",
+   "schedule": "7:00 AM ET, every day",
+   "enabled": true,
+   "runsPerWeek": 7,
+   "observedRuns": 6,
+   "okRuns": 6,
+   "medianMinutes": 4.1,
+   "p90Minutes": 8.5,
+   "firstRun": "2026-09-10T11:05:25.066000Z",
+   "lastRun": "2026-09-15T11:26:55.111000Z"
+  },
+  {
+   "bot": "Jim",
+   "botId": "9abbfaf4-f401-4e70-8619-da598173399a",
+   "name": "Jim daily interest note",
+   "cron": "0 20 * * *",
+   "schedule": "8:00 PM ET, every day",
+   "enabled": true,
+   "runsPerWeek": 7,
+   "observedRuns": 8,
+   "okRuns": 8,
+   "medianMinutes": 6.9,
+   "p90Minutes": 9.1,
+   "firstRun": "2026-09-09T00:12:51.112000Z",
+   "lastRun": "2026-09-16T00:24:03.065000Z"
+  },
+  {
+   "bot": "Pam",
+   "botId": "e1bfeb52-89c2-48fa-b6dd-b4dcf9ed54e1",
+   "name": "Weekday family calendar scan",
+   "cron": "30 7 * * 1-5",
+   "schedule": "7:30 AM ET, weekdays",
+   "enabled": true,
+   "runsPerWeek": 5,
+   "observedRuns": 18,
+   "okRuns": 18,
+   "medianMinutes": 2.9,
+   "p90Minutes": 6.5,
+   "firstRun": "2026-08-21T11:33:44.419000Z",
+   "lastRun": "2026-09-15T11:31:25.444000Z"
+  },
+  {
+   "bot": "Char Tutor",
+   "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
+   "name": "Char weeknight homework check-in",
+   "cron": "45 17 * * *",
+   "schedule": "5:45 PM ET, every day",
+   "enabled": true,
+   "runsPerWeek": 7,
+   "observedRuns": 7,
+   "okRuns": 7,
+   "medianMinutes": 1.2,
+   "p90Minutes": 2.2,
+   "firstRun": "2026-09-09T23:02:51.689000Z",
+   "lastRun": "2026-09-15T23:14:01.862000Z"
+  }
+ ],
+ "routineSummary": {
+  "enabled": 14,
+  "runsPerWeek": 65,
+  "runsPerDay": 9.3,
+  "routineMinutesPerWeek": 303.1,
+  "peakOverlappingRuns": 2,
+  "peakOverlapAt": "2026-09-07T08:38-04:00",
+  "overlapExamples": [
+   "Michael \u00b7 Morning attention brief \u2194 Oscar \u00b7 Watch for Kia Finance statement (Sep 7 8:33 AM ET)",
+   "Oscar \u00b7 Watch for Kia Finance statement \u2194 Brief \u00b7 Morning attention brief (Sep 14 8:42 AM ET)",
+   "Ryan \u00b7 Weekly idea digest \u2194 Jim \u00b7 Daily podcast listen brief (Sep 14 7:07 AM ET)",
+   "Vic Tutor \u00b7 Vic weeknight homework check-in \u2194 Char Tutor \u00b7 Char weeknight homework check-in (Sep 15 7:14 PM ET)"
+  ],
+  "overlapCount": 4
+ },
+ "bots": [
+  {
+   "id": "4feb1fc5-075b-4294-a694-3fa562e5785b",
+   "name": "Michael",
+   "title": "Chief of Staff",
+   "stepsInWindow": 948,
+   "stepsPerActiveDay": 41.2,
+   "activeDays": 23,
+   "topApps": [
+    [
+     "Slack",
+     423
+    ],
+    [
+     "Calendar",
+     147
+    ],
+    [
+     "Shell",
+     139
+    ],
+    [
+     "Gmail",
+     74
+    ],
+    [
+     "Notion",
+     58
+    ],
+    [
+     "Gmail (Miranda)",
+     39
+    ]
+   ],
+   "peakHourET": 8,
+   "computerUse": 4,
+   "browser": 25,
+   "shell": 139,
+   "messages": 194,
+   "boydMessages": 57,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [],
+   "runsPerWeek": 0,
+   "routineMinutesPerWeek": 0.0
+  },
+  {
+   "id": "4b4afba1-ebe0-403c-8502-451e00717b07",
+   "name": "Boyd Family Times (archive)",
+   "title": "Morning Newspaper",
+   "stepsInWindow": 719,
+   "stepsPerActiveDay": 79.9,
+   "activeDays": 9,
+   "topApps": [
+    [
+     "Shell",
+     452
+    ],
+    [
+     "Calendar",
+     169
+    ],
+    [
+     "Gmail",
+     67
+    ],
+    [
+     "Boyd's PC",
+     31
+    ]
+   ],
+   "peakHourET": 5,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 452,
+   "messages": 2,
+   "boydMessages": 13,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "Morning Boyd Family Times"
+   ],
+   "runsPerWeek": 7,
+   "routineMinutesPerWeek": 108.5
+  },
+  {
+   "id": "9abbfaf4-f401-4e70-8619-da598173399a",
+   "name": "Jim",
+   "title": "Interests",
+   "stepsInWindow": 477,
+   "stepsPerActiveDay": 31.8,
+   "activeDays": 15,
+   "topApps": [
+    [
+     "Shell",
+     270
+    ],
+    [
+     "Browser",
+     91
+    ],
+    [
+     "Notion",
+     80
+    ],
+    [
+     "Computer use",
+     14
+    ],
+    [
+     "X",
+     13
+    ],
+    [
+     "Boyd's PC",
+     7
+    ]
+   ],
+   "peakHourET": 20,
+   "computerUse": 14,
+   "browser": 91,
+   "shell": 270,
+   "messages": 71,
+   "boydMessages": 16,
+   "artifactWrites30d": 6,
+   "observedRhythm": [
+    {
+     "hour": 20,
+     "minute": 16,
+     "share": 1.0,
+     "days": 3
+    }
+   ],
+   "routines": [
+    "Bill Simmons Sunday 107 fifth pick",
+    "Daily podcast listen brief",
+    "Jim daily interest note"
+   ],
+   "runsPerWeek": 16,
+   "routineMinutesPerWeek": 81.6
+  },
+  {
+   "id": "e1bfeb52-89c2-48fa-b6dd-b4dcf9ed54e1",
+   "name": "Pam",
+   "title": "Family Logistics",
+   "stepsInWindow": 380,
+   "stepsPerActiveDay": 20.0,
+   "activeDays": 19,
+   "topApps": [
+    [
+     "Gmail (Miranda)",
+     152
+    ],
+    [
+     "Calendar",
+     112
+    ],
+    [
+     "Browser",
+     68
+    ],
+    [
+     "Shell",
+     43
+    ],
+    [
+     "Computer use",
+     4
+    ],
+    [
+     "Gmail",
+     1
+    ]
+   ],
+   "peakHourET": 7,
+   "computerUse": 4,
+   "browser": 68,
+   "shell": 43,
+   "messages": 38,
+   "boydMessages": 3,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "Weekday family calendar scan"
+   ],
+   "runsPerWeek": 5,
+   "routineMinutesPerWeek": 14.5
+  },
+  {
+   "id": "5ea76ec0-2e44-46be-993a-11bc6ba30958",
+   "name": "Oscar",
+   "title": "Finances",
+   "stepsInWindow": 378,
+   "stepsPerActiveDay": 21.0,
+   "activeDays": 18,
+   "topApps": [
+    [
+     "Drive",
+     151
+    ],
+    [
+     "Gmail",
+     132
+    ],
+    [
+     "Gmail (Miranda)",
+     49
+    ],
+    [
+     "Shell",
+     39
+    ],
+    [
+     "Browser",
+     6
+    ],
+    [
+     "Composio",
+     1
+    ]
+   ],
+   "peakHourET": 8,
+   "computerUse": 0,
+   "browser": 6,
+   "shell": 39,
+   "messages": 36,
+   "boydMessages": 4,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "Due-soon bills and money surprises",
+    "Watch for Kia Finance statement",
+    "Weekly household cash snapshot"
+   ],
+   "runsPerWeek": 11,
+   "routineMinutesPerWeek": 41.6
+  },
+  {
+   "id": "759c205a-40a5-4e74-9620-3c04714824f4",
+   "name": "Dr. EggBot",
+   "title": "Bot Creator",
+   "stepsInWindow": 261,
+   "stepsPerActiveDay": 32.6,
+   "activeDays": 8,
+   "topApps": [
+    [
+     "Shell",
+     261
+    ]
+   ],
+   "peakHourET": 6,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 261,
+   "messages": 18,
+   "boydMessages": 10,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "routine-healthcheck",
+    "transcript-healthcheck"
+   ],
+   "runsPerWeek": 6,
+   "routineMinutesPerWeek": 29.1
+  },
+  {
+   "id": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
+   "name": "Char Tutor",
+   "title": "8th Grade Tutor",
+   "stepsInWindow": 152,
+   "stepsPerActiveDay": 21.7,
+   "activeDays": 7,
+   "topApps": [
+    [
+     "Browser",
+     112
+    ],
+    [
+     "Computer use",
+     21
+    ],
+    [
+     "Shell",
+     19
+    ]
+   ],
+   "peakHourET": 19,
+   "computerUse": 21,
+   "browser": 112,
+   "shell": 19,
+   "messages": 29,
+   "boydMessages": 2,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "Char weeknight homework check-in"
+   ],
+   "runsPerWeek": 7,
+   "routineMinutesPerWeek": 8.4
+  },
+  {
+   "id": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
+   "name": "Vic Tutor",
+   "title": "6th Grade Tutor",
+   "stepsInWindow": 144,
+   "stepsPerActiveDay": 20.6,
+   "activeDays": 7,
+   "topApps": [
+    [
+     "Browser",
+     116
+    ],
+    [
+     "Computer use",
+     20
+    ],
+    [
+     "Shell",
+     8
+    ]
+   ],
+   "peakHourET": 19,
+   "computerUse": 20,
+   "browser": 116,
+   "shell": 8,
+   "messages": 34,
+   "boydMessages": 5,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "Vic weeknight homework check-in"
+   ],
+   "runsPerWeek": 7,
+   "routineMinutesPerWeek": 6.3
+  },
+  {
+   "id": "84ee99ac-e314-4642-a27b-89b81a591547",
+   "name": "Brief",
+   "title": "Morning Brief",
+   "stepsInWindow": 62,
+   "stepsPerActiveDay": 20.7,
+   "activeDays": 3,
+   "topApps": [
+    [
+     "Calendar",
+     29
+    ],
+    [
+     "Slack",
+     22
+    ],
+    [
+     "Gmail",
+     10
+    ],
+    [
+     "Shell",
+     1
+    ]
+   ],
+   "peakHourET": 8,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 1,
+   "messages": 2,
+   "boydMessages": 0,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "Morning attention brief"
+   ],
+   "runsPerWeek": 5,
+   "routineMinutesPerWeek": 11.0
+  },
+  {
+   "id": "6a33ea82-5497-43fa-a644-aebed89a6bf6",
+   "name": "Ryan",
+   "title": "Entrepreneur",
+   "stepsInWindow": 7,
+   "stepsPerActiveDay": 7.0,
+   "activeDays": 1,
+   "topApps": [
+    [
+     "Shell",
+     7
+    ]
+   ],
+   "peakHourET": 7,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 7,
+   "messages": 9,
+   "boydMessages": 1,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [
+    "Weekly idea digest"
+   ],
+   "runsPerWeek": 1,
+   "routineMinutesPerWeek": 2.1
+  },
+  {
+   "id": "3e3aaa23-1281-43d0-9cac-e38e22ba5be0",
+   "name": "Kelly",
+   "title": "Trends",
+   "stepsInWindow": 5,
+   "stepsPerActiveDay": 5.0,
+   "activeDays": 1,
+   "topApps": [
+    [
+     "X",
+     3
+    ],
+    [
+     "Shell",
+     1
+    ],
+    [
+     "Browser",
+     1
+    ]
+   ],
+   "peakHourET": 15,
+   "computerUse": 0,
+   "browser": 1,
+   "shell": 1,
+   "messages": 13,
+   "boydMessages": 0,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [],
+   "runsPerWeek": 0,
+   "routineMinutesPerWeek": 0
+  },
+  {
+   "id": "d0afda46-7287-40c1-b934-70ab9225584e",
+   "name": "Dwight",
+   "title": "Code Monkey",
+   "stepsInWindow": 5,
+   "stepsPerActiveDay": 5.0,
+   "activeDays": 1,
+   "topApps": [
+    [
+     "Shell",
+     4
+    ],
+    [
+     "Composio",
+     1
+    ]
+   ],
+   "peakHourET": 18,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 4,
+   "messages": 0,
+   "boydMessages": 2,
+   "artifactWrites30d": 0,
+   "observedRhythm": [],
+   "routines": [],
+   "runsPerWeek": 0,
+   "routineMinutesPerWeek": 0
+  },
+  {
+   "id": "784bedfc-74d6-45a0-a291-762ff05bb0c6",
+   "name": "Boyd Family Times",
+   "title": "",
+   "stepsInWindow": 0,
+   "stepsPerActiveDay": 0,
+   "activeDays": 0,
+   "topApps": [],
+   "peakHourET": null,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 0,
+   "messages": 0,
+   "boydMessages": 0,
+   "artifactWrites30d": 25,
+   "observedRhythm": [
+    {
+     "hour": 5,
+     "minute": 16,
+     "share": 1.0,
+     "days": 4
+    }
+   ],
+   "routines": [],
+   "runsPerWeek": 0,
+   "routineMinutesPerWeek": 0
+  },
+  {
+   "id": "b56dd939-08e7-4c0a-82af-140a51de11b4",
+   "name": "TokenMax",
+   "title": "",
+   "stepsInWindow": 0,
+   "stepsPerActiveDay": 0,
+   "activeDays": 0,
+   "topApps": [],
+   "peakHourET": null,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 0,
+   "messages": 0,
+   "boydMessages": 0,
+   "artifactWrites30d": 12,
+   "observedRhythm": [],
+   "routines": [],
+   "runsPerWeek": 0,
+   "routineMinutesPerWeek": 0
+  },
+  {
+   "id": "ed1121b7-dd17-4061-880f-70ebed7c8250",
+   "name": "Pods",
+   "title": "",
+   "stepsInWindow": 0,
+   "stepsPerActiveDay": 0,
+   "activeDays": 0,
+   "topApps": [],
+   "peakHourET": null,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 0,
+   "messages": 0,
+   "boydMessages": 0,
+   "artifactWrites30d": 10,
+   "observedRhythm": [
+    {
+     "hour": 6,
+     "minute": 48,
+     "share": 1.0,
+     "days": 3
+    }
+   ],
+   "routines": [],
+   "runsPerWeek": 0,
+   "routineMinutesPerWeek": 0
+  },
+  {
+   "id": "fd400f67-24e0-40fd-9d9f-fcdcb2969805",
+   "name": "Path",
+   "title": "High School Path",
+   "stepsInWindow": 0,
+   "stepsPerActiveDay": 0,
+   "activeDays": 0,
+   "topApps": [],
+   "peakHourET": null,
+   "computerUse": 0,
+   "browser": 0,
+   "shell": 0,
+   "messages": 0,
+   "boydMessages": 0,
+   "artifactWrites30d": 5,
+   "observedRhythm": [
+    {
+     "hour": 6,
+     "minute": 50,
+     "share": 1.0,
+     "days": 4
+    }
+   ],
+   "routines": [],
+   "runsPerWeek": 0,
+   "routineMinutesPerWeek": 0
+  }
+ ],
+ "usage": {
+  "used_pct": 4,
+  "reset_date": "2026-10-15",
+  "checked_at": "2026-10-10T13:16-04:00",
+  "label": "Grok Bot weekly included usage",
+  "reset_at": "2026-10-15T19:42-04:00",
+  "target_pct": 23.5,
+  "week_elapsed_pct": 24.75,
+  "cursor_models_pct": 1,
+  "other_models_pct": 0,
+  "monthly_reset": "2026-10-20",
+  "on_demand": "disabled",
+  "account": "Christopher Boyd Ultra",
+  "source": "Cursor spending dashboard (hard-reloaded by TokenMax daily-usage-check)",
+  "gap_pts": 19.5,
+  "reset_note": "Dashboard Sat Oct 10 ~01:16 PM ET after hard reload: Grok Bot weekly 4% used, Resets Oct 15 (6 days left). Cursor Models 1%, Other Models 0%, monthly reset Oct 20. On-demand disabled. Pace target ~23.5% (24.75% of week since Thu 7:42 PM reset \u00d7 95%). Behind by ~19.5 pts."
+ }
+}

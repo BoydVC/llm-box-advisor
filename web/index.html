@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Local LLM Box Advisor · Boyd's fleet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo">▣</div>
+    <div>
+      <div class="mission-tag">Mission briefing · TokenMax</div>
+      <h1>Local LLM Box Advisor</h1>
+      <div class="sub">Could Boyd run his bot fleet, or parts of it, on his own hardware? What would it take?</div>
+    </div>
+  </div>
+  <div class="legend">
+    <span class="tag m">MEASURED</span> Bot Island logs
+    <span class="tag e">ESTIMATE</span> adjustable assumption
+    <span class="tag s">CITED</span> sourced, with as-of
+    <span class="tag u">UNKNOWN</span> no reliable source
+  </div>
+</header>
+<div id="week" class="week-strip" hidden></div>
+<nav id="tabs">
+  <button data-tab="overview" class="on">Overview</button>
+  <button data-tab="workload">Fleet workload</button>
+  <button data-tab="sizing">Sizing calculator</button>
+  <button data-tab="hardware">Hardware &amp; benchmarks</button>
+  <button data-tab="cost">Cost &amp; break-even</button>
+  <button data-tab="matrix">Which bots go local</button>
+  <button data-tab="kpd">KPD law-firm angle</button>
+  <button data-tab="sources">Sources</button>
+</nav>
+<main id="app"><div class="loading">Loading fleet data…</div></main>
+<footer id="foot"></footer>
+<script src="app.js"></script>
+</body>
+</html>

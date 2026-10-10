@@ -1,0 +1,993 @@
+{
+ "researchedAt": "2026-10-07",
+ "researchedBy": "TokenMax (web search, Oct 7 2026 ET). Every figure below is quoted from the cited source; nothing is measured by TokenMax.",
+ "sources": {
+  "macstories": {
+   "title": "M5 Ultra Mac Studio Review: The Dream Mac for Local AI Agents (Federico Viticci, MacStories)",
+   "url": "https://www.macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents/",
+   "asOf": "2026-09-21",
+   "kind": "measured review",
+   "via": "@viticci bookmark (x.com/viticci/status/2102020433394483458)",
+   "short": "MacStories"
+  },
+  "contextstudios": {
+   "title": "Mac Studio M5 Ultra for Local AI: Benchmarks & Prices 2026 (Context Studios)",
+   "url": "https://www.contextstudios.ai/blog/mac-studio-m5-ultra-local-ai-guide",
+   "asOf": "read 2026-10-07",
+   "kind": "price table + own GX10 measurements",
+   "short": "Context Studios"
+  },
+  "presenc_m5": {
+   "title": "Mac Studio M5 Ultra Local LLM Benchmarks (Presenc AI)",
+   "url": "https://presenc.ai/research/mac-studio-m5-ultra-local-llm-benchmarks-2026",
+   "asOf": "2026-09-22",
+   "kind": "price roundup",
+   "short": "Presenc AI"
+  },
+  "reddit_m5": {
+   "title": "r/LocalLLaMA: Apple introduces new Mac Studio with M5 Max and M5 Ultra",
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vxzg6v/apple_introduces_new_mac_studio_with_m5_max_and/",
+   "asOf": "2026-09",
+   "kind": "launch thread (Apple prices quoted)",
+   "short": "r/LocalLLaMA"
+  },
+  "llamaperf_m5": {
+   "title": "M5 Ultra 256GB local LLM performance (llamaperf)",
+   "url": "https://llamaperf.com/gpu/m5-ultra-256gb",
+   "asOf": "read 2026-10-07",
+   "kind": "community benchmark aggregator",
+   "short": "llamaperf"
+  },
+  "sunkcost_m5max": {
+   "title": "Mac Studio M5 Max, 128GB: can it run local LLMs? (Sunk Cost)",
+   "url": "https://sunkcost.ai/hardware/mac-studio-m5-max-128/",
+   "asOf": "read 2026-10-07",
+   "kind": "price + bandwidth-based estimates",
+   "short": "Sunk Cost"
+  },
+  "aliteq_spark": {
+   "title": "DGX Spark Review: Tokens per Second and Is It Worth It (Aliteq)",
+   "url": "https://aliteq.com/dgx-spark-worth-it-local-llm",
+   "asOf": "2026-10-04",
+   "kind": "review citing llama.cpp benchmarks (Feb 2026)",
+   "short": "Aliteq"
+  },
+  "certant_spark": {
+   "title": "Stop chat-testing your DGX Spark (Certant)",
+   "url": "https://certant.ai/blog/your-dgx-spark-isnt-slow-youre-testing-it-wrong",
+   "asOf": "read 2026-10-07",
+   "kind": "measured (1 month on desk)",
+   "short": "Certant"
+  },
+  "gpuwerk_spark": {
+   "title": "DGX Spark benchmarks: what to actually expect (GPUwerk)",
+   "url": "https://gpuwerk.com/docs/benchmarks/",
+   "asOf": "2026-08-26",
+   "kind": "benchmark compilation",
+   "short": "GPUwerk"
+  },
+  "aimultiple_spark": {
+   "title": "DGX Spark vs Mac Studio & Halo: Benchmarks & Alternatives (AIMultiple)",
+   "url": "https://research.aimultiple.com/dgx-spark-alternatives",
+   "asOf": "2026-04",
+   "kind": "comparison table",
+   "short": "AIMultiple"
+  },
+  "toms_spark_power": {
+   "title": "Nvidia DGX Spark review, page 4: power, efficiency, heat and noise (Tom's Hardware)",
+   "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-dgx-spark-review/4",
+   "asOf": "2025 launch review (read 2026-10-07)",
+   "kind": "measured power",
+   "short": "Tom's Hardware"
+  },
+  "cfg_strix": {
+   "title": "Best Ryzen AI Max+ 395 Mini PC (2026): 5 Compared (ComputingForGeeks)",
+   "url": "https://computingforgeeks.com/ryzen-ai-max-395-mini-pc-comparison/",
+   "asOf": "2026-10-02",
+   "kind": "price check + cited benchmarks",
+   "short": "ComputingForGeeks"
+  },
+  "specpicks_strix": {
+   "title": "Strix Halo (Ryzen AI Max+) LLM Benchmarks 2026 (SpecPicks)",
+   "url": "https://specpicks.com/reviews/strix-halo-llm-benchmark-2025-amd-ai-rigs",
+   "asOf": "2026-09-26",
+   "kind": "benchmark log (Strix Halo Guide)",
+   "short": "SpecPicks"
+  },
+  "specpicks_strix_box": {
+   "title": "AMD Ryzen AI Max+ 395 Box (Strix Halo) (SpecPicks)",
+   "url": "https://specpicks.com/reviews/amd-ryzen-395-strix-halo-local-llm-2026",
+   "asOf": "2026-09",
+   "kind": "prices + benchmark grid",
+   "short": "SpecPicks"
+  },
+  "hwcorner_5090": {
+   "title": "RTX 5090 Local LLM Benchmarks, Context Scaling (Hardware Corner)",
+   "url": "https://www.hardware-corner.net/gpu-llm-benchmarks/rtx-5090/",
+   "asOf": "2026-03",
+   "kind": "measured llama.cpp",
+   "short": "Hardware Corner"
+  },
+  "presenc_5090": {
+   "title": "RTX 5090 Local LLM Benchmarks: Tokens per Second by Model (Presenc AI)",
+   "url": "https://presenc.ai/research/rtx-5090-local-llm-benchmarks-2026",
+   "asOf": "2026-09-16",
+   "kind": "benchmarks + street prices",
+   "short": "Presenc AI"
+  },
+  "hwcorner_3090": {
+   "title": "RTX 3090 Local LLM Benchmarks (Hardware Corner)",
+   "url": "https://www.hardware-corner.net/gpu-llm-benchmarks/rtx-3090/",
+   "asOf": "read 2026-10-07",
+   "kind": "measured llama.cpp",
+   "short": "Hardware Corner"
+  },
+  "used_3090": {
+   "title": "RAMageddon Turns Old RTX 3090 GPUs Into $1,300+ Resale Gold Mines (GamesReviews)",
+   "url": "https://gamesreviews.com/news/09/ramageddon-turns-old-rtx-3090-gpus-into-1300-resale-gold-mines/",
+   "asOf": "2026-09",
+   "kind": "used-market prices",
+   "short": "GamesReviews"
+  },
+  "used_4090": {
+   "title": "Used RTX 4090 Price, October 2026 (Get PC Parts)",
+   "url": "https://www.getpcparts.com/market-prices/gpu-graphics-cards/rtx-4090",
+   "asOf": "2026-10-07",
+   "kind": "used-market prices",
+   "short": "Get PC Parts"
+  },
+  "engadget_pro6000": {
+   "title": "Why NVIDIA's Most Powerful GPU Is So Rarely Sold To Consumers (Engadget)",
+   "url": "https://www.engadget.com/2265946/why-most-powerful-nvidia-gpu-rarely-sold-to-consumers/",
+   "asOf": "2026-09-26",
+   "kind": "price",
+   "short": "Engadget"
+  },
+  "androidhire_pro6000": {
+   "title": "RTX PRO 6000 Workstation: Specs, Price & vs RTX 5090 (AndroidHire)",
+   "url": "https://www.androidhire.com/nvidia-rtx-pro-6000-blackwell-workstation-edition",
+   "asOf": "2026-10-04",
+   "kind": "street price + cited benchmarks (StorageReview)",
+   "short": "AndroidHire"
+  },
+  "llamaperf_pro6000": {
+   "title": "NVIDIA RTX Pro 6000 Blackwell (96GB) local LLM performance (llamaperf)",
+   "url": "https://llamaperf.com/gpu/rtx-pro-6000-blackwell",
+   "asOf": "read 2026-10-07",
+   "kind": "community benchmark aggregator",
+   "short": "llamaperf"
+  },
+  "qwen38_27b": {
+   "title": "Qwen/Qwen3.8-27B model card (Hugging Face)",
+   "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "asOf": "read 2026-10-07",
+   "kind": "vendor model card",
+   "short": "Qwen HF card"
+  },
+  "qwen38_flashnext": {
+   "title": "Qwen3.8-Flash-Next: A New Architecture, Towards Ultimate Cost-Efficiency (Alibaba Cloud)",
+   "url": "https://www.alibabacloud.com/blog/qwen3-8-flash-next-a-new-architecture-towards-ultimate-cost-efficiency_603501",
+   "asOf": "2026-08-27",
+   "kind": "vendor release",
+   "short": "Alibaba Cloud"
+  },
+  "openrouter_flash": {
+   "title": "Qwen3.8-Flash-Next on OpenRouter: pricing (LLMReference)",
+   "url": "https://www.llmreference.com/model/qwen3.8-flash-next/openrouter",
+   "asOf": "read 2026-10-07",
+   "kind": "API price",
+   "short": "LLMReference"
+  },
+  "openrouter_gptoss": {
+   "title": "gpt-oss-120b: API pricing (OpenRouter)",
+   "url": "https://openrouter.ai/openai/gpt-oss-120b",
+   "asOf": "read 2026-10-07",
+   "kind": "API price",
+   "short": "OpenRouter"
+  },
+  "bonsai": {
+   "title": "Announcing Bonsai 27B: The First 27B-Class Model to Run on a Phone (PrismML)",
+   "url": "https://prismml.com/news/bonsai-27b",
+   "asOf": "read 2026-10-07",
+   "kind": "vendor release",
+   "short": "PrismML"
+  },
+  "cursor_pricing": {
+   "title": "Cursor Help: Pricing and plans",
+   "url": "https://cursor.com/help/account-and-billing/pricing.md",
+   "asOf": "2026-10-07",
+   "kind": "vendor pricing",
+   "short": "Cursor Help"
+  },
+  "cursor_models": {
+   "title": "Cursor Docs: Models & Pricing",
+   "url": "https://cursor.com/docs/models-and-pricing",
+   "asOf": "2026-10-07",
+   "kind": "vendor pricing",
+   "short": "Cursor Docs"
+  },
+  "eia_md": {
+   "title": "Maryland Electricity Rates (July 2026): 21.41\u00a2/kWh vs 18.31\u00a2 U.S. average (Energy Factbook, from EIA Table 5.6.A)",
+   "url": "https://energyfactbook.com/electricity-rates/maryland/",
+   "asOf": "2026-07",
+   "kind": "EIA data",
+   "short": "EIA / Energy Factbook"
+  },
+  "ahmad_bible": {
+   "title": "@TheAhmadOsman: 'The bible for running LLMs locally' + 'Inference Engines for LLMs & Local AI Hardware (2026 Edition)'",
+   "url": "https://x.com/TheAhmadOsman/status/2096725148057633093",
+   "asOf": "2026-09-06",
+   "kind": "Boyd bookmark (practitioner guide)",
+   "short": "@TheAhmadOsman"
+  },
+  "ahmad_open": {
+   "title": "@TheAhmadOsman on open models vs Xmas-2025 frontier (quoted by @elonmusk)",
+   "url": "https://x.com/TheAhmadOsman",
+   "asOf": "2026-09-20",
+   "kind": "opinion (in Boyd's X feed scrape)",
+   "short": "@TheAhmadOsman"
+  },
+  "da7": {
+   "title": "@Da7_Tech: 'My stack changed' (Devin Max, Droid Max, MiniMax, Hermes Agent, Bonsai 27B locally)",
+   "url": "https://x.com/Da7_Tech/status/2100199909148307612",
+   "asOf": "2026-09-16",
+   "kind": "Boyd bookmark (practitioner stack)",
+   "short": "@Da7_Tech"
+  },
+  "aba512": {
+   "title": "ABA Formal Opinion 512: Generative Artificial Intelligence Tools (July 29, 2024)",
+   "url": "https://www.acc.com/sites/default/files/2024-08/2024.07.29-ABA-formal-opinion-512.pdf",
+   "asOf": "2024-07-29",
+   "kind": "ethics opinion",
+   "short": "ABA Op. 512"
+  },
+  "aba512_small": {
+   "title": "ABA Formal Opinion 512, Explained for Small Firms (Stephen Thorn)",
+   "url": "https://www.stephenthorn.com/blog/aba-opinion-512-small-firms/",
+   "asOf": "read 2026-10-07",
+   "kind": "commentary",
+   "short": "Thorn commentary"
+  },
+  "tokenstead_power": {
+   "title": "M5 Ultra power efficiency vs DGX Spark & RTX (Tokenstead)",
+   "url": "https://tokenstead.ai/guides/m5-ultra-power-efficiency-dgx-spark-rtx",
+   "asOf": "read 2026-10-07",
+   "kind": "measured wall power",
+   "short": "Tokenstead"
+  },
+  "modelfit_pro6000": {
+   "title": "RTX PRO 6000 Blackwell 96GB Local LLM (ModelFit)",
+   "url": "https://modelfit.io/gpu/rtx-6000-pro/",
+   "asOf": "2026-07",
+   "kind": "specs + estimates (hardware comparison table)",
+   "short": "ModelFit"
+  },
+  "diggtop_strix": {
+   "title": "Ryzen AI Max+ 395 (Strix Halo) 128GB guide (DiggTop)",
+   "url": "https://www.diggtop.com/guides/ryzen-ai-max-395-strix-halo",
+   "asOf": "2026-09-05",
+   "kind": "guide citing strix-halo-llm-perf",
+   "short": "DiggTop"
+  }
+ },
+ "hardware": [
+  {
+   "id": "m5ultra256",
+   "name": "Mac Studio M5 Ultra \u00b7 256 GB (36C CPU / 80C GPU)",
+   "short": "M5 Ultra 256GB",
+   "family": "Apple unified memory",
+   "memoryGB": 256,
+   "usableGB": 200,
+   "usableNote": "oMLX allowed ~200.4 GB for a model on the 256 GB unit (MacStories)",
+   "bandwidthGBs": 1200,
+   "priceUSD": 10799,
+   "priceNote": "Apple US list, 1 TB SSD",
+   "priceSrc": "contextstudios",
+   "priceAsOf": "2026-10",
+   "watts": 214,
+   "wattsNote": "~214 W peak sustained during LLM inference (256 GB config)",
+   "wattsSrc": "tokenstead_power",
+   "engine": "MLX / oMLX",
+   "notes": "Quiet desktop; holds 125B-class MoE (Flash-Next 4/5-bit) in memory; RTX 5090 still ~25% faster at decode on models that fit in 32 GB (MacStories).",
+   "color": "#a78bfa"
+  },
+  {
+   "id": "m5ultra96",
+   "name": "Mac Studio M5 Ultra \u00b7 96 GB (30C CPU / 64C GPU)",
+   "short": "M5 Ultra 96GB",
+   "family": "Apple unified memory",
+   "memoryGB": 96,
+   "usableGB": 75,
+   "usableNote": "Usable share assumed ~78% by analogy with the 256 GB unit's 200/256 (estimate)",
+   "bandwidthGBs": null,
+   "bandwidthNote": "Unknown for the 64-core-GPU bin (1.2 TB/s is quoted for M5 Ultra generally)",
+   "priceUSD": 5499,
+   "priceNote": "Apple US list, 1 TB",
+   "priceSrc": "presenc_m5",
+   "priceAsOf": "2026-09-22",
+   "watts": null,
+   "engine": "MLX",
+   "notes": "Entry Ultra. Fits 27B dense at 8-bit or ~120B MoE at 4-bit with modest context.",
+   "color": "#c4b5fd"
+  },
+  {
+   "id": "m5max128",
+   "name": "Mac Studio M5 Max \u00b7 128 GB",
+   "short": "M5 Max 128GB",
+   "family": "Apple unified memory",
+   "memoryGB": 128,
+   "usableGB": 100,
+   "usableNote": "estimate (~78% of RAM)",
+   "bandwidthGBs": 614,
+   "bandwidthNote": "per-M5-Max-die figure quoted in r/LocalLLaMA launch thread",
+   "bandwidthSrc": "reddit_m5",
+   "priceUSD": 5099,
+   "priceNote": "1 TB config",
+   "priceSrc": "sunkcost_m5max",
+   "priceAsOf": "2026-10",
+   "watts": null,
+   "engine": "MLX",
+   "notes": "Half the bandwidth of the Ultra. Sunk Cost estimates ~25 tok/s on Qwen3.8 27B Q4 (estimate, not measured).",
+   "color": "#ddd6fe"
+  },
+  {
+   "id": "spark",
+   "name": "NVIDIA DGX Spark (GB10) \u00b7 128 GB",
+   "short": "DGX Spark",
+   "family": "NVIDIA unified memory (CUDA)",
+   "memoryGB": 128,
+   "usableGB": 115,
+   "usableNote": "estimate",
+   "bandwidthGBs": 273,
+   "bandwidthSrc": "gpuwerk_spark",
+   "priceUSD": 4699,
+   "priceNote": "Founders Edition after Feb 2026 increase from $3,999; 64 GB partner units ship Oct 23, 2026, price not announced",
+   "priceSrc": "aliteq_spark",
+   "priceAsOf": "2026-10-04",
+   "watts": 160,
+   "wattsNote": "~160 W at the wall under GPU-heavy load (240 W PSU)",
+   "wattsSrc": "toms_spark_power",
+   "engine": "vLLM / SGLang / llama.cpp",
+   "notes": "Slow single-stream on dense models (~273 GB/s) but excellent batched throughput: gpt-oss-120b 61 \u2192 2,621 tok/s aggregate at 128 concurrent (Certant). Also sold as ASUS GX10.",
+   "color": "#76b900"
+  },
+  {
+   "id": "strix",
+   "name": "AMD Ryzen AI Max+ 395 (Strix Halo) mini PC \u00b7 128 GB",
+   "short": "Strix Halo 128GB",
+   "family": "AMD unified memory",
+   "memoryGB": 128,
+   "usableGB": 96,
+   "usableNote": "up to 96 GB of the 128 GB can be assigned to graphics",
+   "bandwidthGBs": 256,
+   "bandwidthSrc": "specpicks_strix_box",
+   "priceUSD": 3324,
+   "priceNote": "Bosgame M5 $3,324; Framework $3,449 (often unavailable); GMKtec EVO-X2 $3,499.99; Minisforum $3,799; Beelink $4,349; AMD Halo dev box $3,999",
+   "priceSrc": "cfg_strix",
+   "priceAsOf": "2026-10-02",
+   "watts": null,
+   "engine": "llama.cpp (Vulkan)",
+   "notes": "Cheapest way to hold 120B-class MoE in one box. Dense 70B is slow (~4.8 tok/s). Prefill is weak vs discrete GPUs.",
+   "color": "#ef4444",
+   "usableSrc": "diggtop_strix"
+  },
+  {
+   "id": "rtx5090",
+   "name": "GeForce RTX 5090 \u00b7 32 GB (card only)",
+   "short": "RTX 5090",
+   "family": "Discrete NVIDIA GPU",
+   "memoryGB": 32,
+   "usableGB": 30,
+   "usableNote": "estimate",
+   "bandwidthGBs": 1790,
+   "bandwidthSrc": "macstories",
+   "priceUSD": 4299,
+   "priceNote": "MSRP $1,999, but Sept 2026 street $4,299\u2013$5,300 (GDDR7 shortage). Host PC not included (not priced).",
+   "priceSrc": "presenc_5090",
+   "priceAsOf": "2026-09-16",
+   "watts": 577,
+   "wattsNote": "peak power 567\u2013577 W measured in MacStories' subagent test (PC)",
+   "wattsSrc": "macstories",
+   "engine": "llama.cpp / ExLlama / vLLM",
+   "notes": "Fastest single card for models \u226432 GB (Qwen3.8 27B 59 tok/s, 3,031 tok/s prefill). Spills to system RAM beyond that (4.6 tok/s).",
+   "color": "#22c55e"
+  },
+  {
+   "id": "pro6000",
+   "name": "NVIDIA RTX PRO 6000 Blackwell \u00b7 96 GB (card only)",
+   "short": "RTX PRO 6000",
+   "family": "Discrete NVIDIA GPU",
+   "memoryGB": 96,
+   "usableGB": 86,
+   "usableNote": "~86 GB usable after driver overhead (ModelFit)",
+   "bandwidthGBs": 1792,
+   "bandwidthSrc": "androidhire_pro6000",
+   "priceUSD": 16000,
+   "priceNote": "NVIDIA US price $16,000 (launched ~$8,565); ~$18,000 at Newegg/Amazon Oct 4. Host workstation not included.",
+   "priceSrc": "engadget_pro6000",
+   "priceAsOf": "2026-09-26",
+   "watts": 600,
+   "wattsNote": "max board power",
+   "wattsSrc": "engadget_pro6000",
+   "engine": "vLLM / SGLang",
+   "notes": "ECC, 96 GB at 5090-class bandwidth. gpt-oss-120b 163 tok/s; Flash-Next NVFP4 ~100 tok/s at 32K.",
+   "color": "#16a34a",
+   "usableSrc": "modelfit_pro6000"
+  },
+  {
+   "id": "rtx3090",
+   "name": "Used RTX 3090 \u00b7 24 GB (card only)",
+   "short": "Used RTX 3090",
+   "family": "Discrete NVIDIA GPU",
+   "memoryGB": 24,
+   "usableGB": 22,
+   "usableNote": "estimate",
+   "bandwidthGBs": 936,
+   "bandwidthSrc": "aimultiple_spark",
+   "priceUSD": 1395,
+   "priceNote": "used, $1,300\u2013$1,450 in Sept 2026 (was $600\u2013$800 earlier in 2026)",
+   "priceSrc": "used_3090",
+   "priceAsOf": "2026-09",
+   "watts": null,
+   "engine": "llama.cpp / ExLlamaV2",
+   "notes": "Budget 24 GB. 3\u00d7 3090 ran gpt-oss-120b at 124 tok/s (AIMultiple, Apr 2026) but needs a multi-GPU host.",
+   "color": "#86efac"
+  },
+  {
+   "id": "rtx4090",
+   "name": "Used RTX 4090 \u00b7 24 GB (card only)",
+   "short": "Used RTX 4090",
+   "family": "Discrete NVIDIA GPU",
+   "memoryGB": 24,
+   "usableGB": 22,
+   "usableNote": "estimate",
+   "bandwidthGBs": 1008,
+   "bandwidthSrc": "modelfit_pro6000",
+   "priceUSD": 2214,
+   "priceNote": "used, ~$2,214 (eBay sold) to ~$3,050 (recent genuine sales)",
+   "priceSrc": "used_4090",
+   "priceAsOf": "2026-10-07",
+   "watts": null,
+   "engine": "llama.cpp / ExLlamaV2",
+   "notes": "Same 24 GB as a 3090 for far more money; no 2026 tok/s for current models found \u2192 unknown.",
+   "color": "#bbf7d0"
+  }
+ ],
+ "models": [
+  {
+   "id": "q38_27b",
+   "name": "Qwen3.8-27B",
+   "maker": "Alibaba Qwen",
+   "license": "Apache-2.0",
+   "totalB": 27,
+   "activeB": 27,
+   "arch": "dense, hybrid Gated DeltaNet + attention",
+   "ctxK": 262,
+   "src": "qwen38_27b",
+   "kvKBperTok": 64,
+   "kvNote": "ESTIMATE: assumes Qwen3-32B-class attention (256 KB/token at FP16) in only 1 of 4 layers (hybrid Gated DeltaNet design). Exact KV size not published in the sources read.",
+   "quality": "Vendor-reported: SWE-bench Pro 61.7, Terminal-Bench 2.1 73.0, OSWorld-Verified 84.3",
+   "good": "All-round assistant, tool calling, vision; fits a 32 GB card at Q4"
+  },
+  {
+   "id": "q38_flashnext",
+   "name": "Qwen3.8-Flash-Next",
+   "maker": "Alibaba Qwen",
+   "license": "open weights",
+   "totalB": 125,
+   "activeB": 6,
+   "extraB": 51,
+   "arch": "MoE 125B (6B active) + 51B n-gram embeddings (offloadable to host/SSD)",
+   "ctxK": 262,
+   "src": "qwen38_flashnext",
+   "kvKBperTok": 64,
+   "kvNote": "ESTIMATE: assumes Qwen3-32B-class attention (256 KB/token at FP16) in only 1 of 4 layers (hybrid Gated DeltaNet design). Exact KV size not published in the sources read.",
+   "measuredFootprintGB": {
+    "4-bit": 155,
+    "5-bit": 179
+   },
+   "footprintSrc": "macstories",
+   "quality": "Vendor: beats Qwen3.7-Plus on coding/office tasks; Viticci made it his default local assistant model",
+   "good": "Agentic assistants, long context, multi-session; Viticci's local-only Hermes setup"
+  },
+  {
+   "id": "gptoss120",
+   "name": "gpt-oss-120b",
+   "maker": "OpenAI",
+   "license": "Apache-2.0",
+   "totalB": 117,
+   "activeB": 5.1,
+   "arch": "MoE (5.1B active), MXFP4 native",
+   "ctxK": 128,
+   "src": "specpicks_strix",
+   "kvKBperTok": 37,
+   "kvNote": "derived: 36 layers \u00d7 8 KV heads \u00d7 64 dim \u00d7 2 (K,V) \u00d7 2 bytes, half the layers sliding-window",
+   "fileGB": 63.4,
+   "good": "Cheap fast MoE on 128 GB boxes; the standard Spark/Strix benchmark"
+  },
+  {
+   "id": "q36_35b",
+   "name": "Qwen3.6-35B-A3B",
+   "maker": "Alibaba Qwen",
+   "license": "open weights",
+   "totalB": 35,
+   "activeB": 3,
+   "arch": "MoE (3B active)",
+   "ctxK": 262,
+   "src": "specpicks_strix",
+   "kvKBperTok": 25,
+   "kvNote": "ESTIMATE: Qwen3-30B-A3B attention (48 layers \u00d7 4 KV heads \u00d7 128 \u00d7 2 \u00d7 2 B \u2248 98 KB/token) in 1 of 4 layers (hybrid).",
+   "fileGB": 22.1,
+   "good": "Fast digest/summarization worker; 60\u2013120 tok/s on 128 GB boxes"
+  },
+  {
+   "id": "bonsai27",
+   "name": "Bonsai 27B (ternary)",
+   "maker": "PrismML",
+   "license": "open weights",
+   "totalB": 27,
+   "activeB": 27,
+   "arch": "Qwen3.6-based, 1-bit / ternary",
+   "ctxK": 262,
+   "src": "bonsai",
+   "kvKBperTok": 64,
+   "kvNote": "ESTIMATE: assumes Qwen3-32B-class attention (256 KB/token at FP16) in only 1 of 4 layers (hybrid Gated DeltaNet design). Exact KV size not published in the sources read.",
+   "fileGB": 7.2,
+   "fileNote": "ternary ~5.9\u20137.2 GB; 1-bit ~3.9 GB",
+   "good": "@Da7_Tech's 'sensitive tasks' model; runs on laptops/phones. No tok/s benchmark found \u2192 unknown."
+  },
+  {
+   "id": "q3_32b",
+   "name": "Qwen3-32B (dense)",
+   "maker": "Alibaba Qwen",
+   "license": "Apache-2.0",
+   "totalB": 32.8,
+   "activeB": 32.8,
+   "arch": "dense",
+   "ctxK": 128,
+   "src": "hwcorner_5090",
+   "kvKBperTok": 256,
+   "kvNote": "derived: 64 layers \u00d7 8 KV heads \u00d7 128 dim \u00d7 2 \u00d7 2 bytes",
+   "fileGB": 19.9,
+   "good": "Older dense baseline with many published benchmarks"
+  },
+  {
+   "id": "llama70",
+   "name": "Llama 3.x 70B (dense)",
+   "maker": "Meta",
+   "license": "Llama community",
+   "totalB": 70.6,
+   "activeB": 70.6,
+   "arch": "dense",
+   "ctxK": 128,
+   "src": "specpicks_strix",
+   "kvKBperTok": 320,
+   "kvNote": "derived: 80 layers \u00d7 8 KV heads \u00d7 128 dim \u00d7 2 \u00d7 2 bytes",
+   "fileGB": 42.5,
+   "good": "Shows why big dense models are slow on 256\u2013273 GB/s boxes"
+  }
+ ],
+ "quants": [
+  {
+   "id": "q4",
+   "label": "4-bit (Q4_K_M / MXFP4 / oQ4)",
+   "bitsPerParam": 4.8
+  },
+  {
+   "id": "q5",
+   "label": "5-bit (Q5_K_M / oQ5)",
+   "bitsPerParam": 5.7
+  },
+  {
+   "id": "q6",
+   "label": "6-bit (Q6_K)",
+   "bitsPerParam": 6.6
+  },
+  {
+   "id": "q8",
+   "label": "8-bit (Q8_0 / FP8)",
+   "bitsPerParam": 8.5
+  },
+  {
+   "id": "bf16",
+   "label": "16-bit (BF16, unquantized)",
+   "bitsPerParam": 16
+  }
+ ],
+ "quantNote": "Effective bits/param include scales & mixed-precision layers; derived from published file sizes (e.g. Qwen3-32B Q4_K_M \u2248 19.9 GB \u2192 ~4.8 bits). Rule-of-thumb, not a measurement.",
+ "benchmarks": [
+  {
+   "hw": "m5ultra256",
+   "model": "q38_flashnext",
+   "quant": "oQ4e (MLX)",
+   "engine": "oMLX 0.7.0.dev2, MTP 3",
+   "ctx": "short (~4K)",
+   "decode": 108,
+   "prefill": null,
+   "src": "macstories",
+   "note": "median of 3; code prompts 143 tok/s"
+  },
+  {
+   "hw": "m5ultra256",
+   "model": "q38_flashnext",
+   "quant": "oQ4e (MLX)",
+   "engine": "oMLX",
+   "ctx": "16K",
+   "decode": 87.8,
+   "prefill": 2887,
+   "src": "macstories",
+   "note": "512-token answer"
+  },
+  {
+   "hw": "m5ultra256",
+   "model": "q38_flashnext",
+   "quant": "oQ4e (MLX)",
+   "engine": "oMLX",
+   "ctx": "64K",
+   "decode": 83.8,
+   "prefill": 2732,
+   "src": "macstories",
+   "note": "first token 23.7 s"
+  },
+  {
+   "hw": "m5ultra256",
+   "model": "q38_flashnext",
+   "quant": "oQ4e (MLX)",
+   "engine": "oMLX",
+   "ctx": "128K",
+   "decode": 60.6,
+   "prefill": 2654,
+   "src": "macstories",
+   "note": "first token 49 s"
+  },
+  {
+   "hw": "m5ultra256",
+   "model": "q38_flashnext",
+   "quant": "oQ4e (MLX)",
+   "engine": "oMLX",
+   "ctx": "6.5K \u00d7 3 concurrent",
+   "decode": 81.5,
+   "prefill": null,
+   "aggregate": true,
+   "concurrency": 3,
+   "src": "macstories",
+   "note": "combined output of 3 simultaneous requests (66.2 for 1)"
+  },
+  {
+   "hw": "m5ultra256",
+   "model": "q38_27b",
+   "quant": "oQ4e (MLX)",
+   "engine": "oMLX",
+   "ctx": "6K",
+   "decode": 48,
+   "prefill": 1701,
+   "src": "macstories",
+   "note": "first token 4.0 s"
+  },
+  {
+   "hw": "m5ultra256",
+   "model": "q38_27b",
+   "quant": "oQ4e (MLX)",
+   "engine": "oMLX",
+   "ctx": "64K",
+   "decode": 38.9,
+   "prefill": 1501,
+   "src": "macstories",
+   "note": ""
+  },
+  {
+   "hw": "rtx5090",
+   "model": "q38_27b",
+   "quant": "Q4_K_M (GGUF)",
+   "engine": "LM Studio 0.4.24, CUDA 12",
+   "ctx": "6K",
+   "decode": 59,
+   "prefill": 3031,
+   "src": "macstories",
+   "note": "first token 2.0 s"
+  },
+  {
+   "hw": "rtx5090",
+   "model": "q38_27b",
+   "quant": "Q4_K_M (GGUF)",
+   "engine": "LM Studio, 8-bit KV",
+   "ctx": "64K",
+   "decode": 49.6,
+   "prefill": null,
+   "src": "macstories",
+   "note": "spilling to system RAM drops to 4.6 tok/s"
+  },
+  {
+   "hw": "rtx5090",
+   "model": "q38_27b",
+   "quant": "Q4_K_M (GGUF)",
+   "engine": "LM Studio, 3 parallel slots",
+   "ctx": "8K",
+   "decode": 117.8,
+   "prefill": null,
+   "aggregate": true,
+   "concurrency": 3,
+   "src": "macstories",
+   "note": "helper throughput, 3 parallel subagents (61.0 serial)"
+  },
+  {
+   "hw": "rtx5090",
+   "model": "q3_32b",
+   "quant": "Q4_K",
+   "engine": "llama.cpp b8189",
+   "ctx": "4K",
+   "decode": 61.4,
+   "prefill": 2931,
+   "src": "hwcorner_5090",
+   "note": "43.8 tok/s at 32K"
+  },
+  {
+   "hw": "rtx5090",
+   "model": "q36_35b",
+   "quant": "\u2014",
+   "engine": "llama.cpp",
+   "ctx": "",
+   "decode": null,
+   "prefill": null,
+   "src": "hwcorner_5090",
+   "note": "not in source; Qwen3 30B-A3B Q4_K measured 226 tok/s at 4K (proxy)",
+   "unknown": true
+  },
+  {
+   "hw": "spark",
+   "model": "gptoss120",
+   "quant": "MXFP4",
+   "engine": "llama.cpp",
+   "ctx": "short",
+   "decode": 58.72,
+   "prefill": null,
+   "src": "aliteq_spark",
+   "note": "42.76 tok/s with 32K prior context"
+  },
+  {
+   "hw": "spark",
+   "model": "gptoss120",
+   "quant": "MXFP4",
+   "engine": "llama.cpp",
+   "ctx": "short",
+   "decode": 60.5,
+   "prefill": 1956,
+   "src": "gpuwerk_spark",
+   "note": ""
+  },
+  {
+   "hw": "spark",
+   "model": "gptoss120",
+   "quant": "MXFP4",
+   "engine": "SGLang, 128 concurrent",
+   "ctx": "",
+   "decode": 2621,
+   "prefill": null,
+   "aggregate": true,
+   "concurrency": 128,
+   "src": "certant_spark",
+   "note": "61.4 tok/s single-stream"
+  },
+  {
+   "hw": "spark",
+   "model": "q36_35b",
+   "quant": "NVFP4",
+   "engine": "vLLM",
+   "ctx": "",
+   "decode": 119.9,
+   "prefill": null,
+   "src": "certant_spark",
+   "note": "thinking off (80 with thinking on); 2,805 tok/s aggregate at 128"
+  },
+  {
+   "hw": "spark",
+   "model": "llama70",
+   "quant": "FP8",
+   "engine": "SGLang (LMSYS)",
+   "ctx": "",
+   "decode": 2.7,
+   "prefill": null,
+   "src": "aliteq_spark",
+   "note": "dense 70B: runs, unusable for chat"
+  },
+  {
+   "hw": "strix",
+   "model": "gptoss120",
+   "quant": "MXFP4",
+   "engine": "llama.cpp Vulkan",
+   "ctx": "short",
+   "decode": 55.57,
+   "prefill": null,
+   "src": "specpicks_strix",
+   "note": "re-checked Sep 26 2026 (56.14); LM Studio out of the box: 31.41 (STH via CFG)"
+  },
+  {
+   "hw": "strix",
+   "model": "q36_35b",
+   "quant": "UD-Q4_K_M",
+   "engine": "llama.cpp Vulkan",
+   "ctx": "short",
+   "decode": 62.56,
+   "prefill": null,
+   "src": "specpicks_strix",
+   "note": ""
+  },
+  {
+   "hw": "strix",
+   "model": "llama70",
+   "quant": "Q4_K_M",
+   "engine": "Ollama Vulkan",
+   "ctx": "short",
+   "decode": 4.8,
+   "prefill": null,
+   "src": "specpicks_strix",
+   "note": "4.7\u20134.9 tok/s"
+  },
+  {
+   "hw": "strix",
+   "model": "q3_32b",
+   "quant": "Q4",
+   "engine": "llama.cpp",
+   "ctx": "",
+   "decode": 10,
+   "prefill": null,
+   "src": "cfg_strix",
+   "note": "cited range ~8\u201312 tok/s"
+  },
+  {
+   "hw": "pro6000",
+   "model": "gptoss120",
+   "quant": "MXFP4",
+   "engine": "LM Studio (StorageReview)",
+   "ctx": "",
+   "decode": 163.1,
+   "prefill": null,
+   "src": "androidhire_pro6000",
+   "note": "Llama 3.3 70B: 31.8 tok/s"
+  },
+  {
+   "hw": "pro6000",
+   "model": "llama70",
+   "quant": "Q4",
+   "engine": "LM Studio (StorageReview)",
+   "ctx": "",
+   "decode": 31.8,
+   "prefill": null,
+   "src": "androidhire_pro6000",
+   "note": ""
+  },
+  {
+   "hw": "pro6000",
+   "model": "q38_flashnext",
+   "quant": "NVFP4/FP8 mixed",
+   "engine": "vLLM + MTP",
+   "ctx": "32K",
+   "decode": 98.9,
+   "prefill": null,
+   "src": "llamaperf_pro6000",
+   "note": "101.6 at 1K; prefill ~28K tok/s; n-gram tables offloaded to host RAM"
+  },
+  {
+   "hw": "rtx3090",
+   "model": "q3_32b",
+   "quant": "Q4_K",
+   "engine": "llama.cpp (flash attn)",
+   "ctx": "4K",
+   "decode": 35.1,
+   "prefill": 1088,
+   "src": "hwcorner_3090",
+   "note": "30.3 tok/s at 16K"
+  },
+  {
+   "hw": "m5max128",
+   "model": "q38_27b",
+   "quant": "Q4",
+   "engine": "estimate",
+   "ctx": "",
+   "decode": 25,
+   "prefill": null,
+   "src": "sunkcost_m5max",
+   "note": "bandwidth-based ESTIMATE by Sunk Cost, not a measurement",
+   "estimate": true
+  }
+ ],
+ "apiPrices": [
+  {
+   "model": "Qwen3.8-Flash (hosted Flash-Next)",
+   "inPerM": 0.16,
+   "cachedPerM": 0.016,
+   "outPerM": 0.47,
+   "src": "qwen38_flashnext",
+   "note": "QwenCloud list price; OpenRouter $0.15 in / $0.47 out / $0.016 cached"
+  },
+  {
+   "model": "gpt-oss-120b (OpenRouter)",
+   "inPerM": 0.03,
+   "cachedPerM": 0.03,
+   "outPerM": 0.17,
+   "src": "openrouter_gptoss",
+   "note": ""
+  },
+  {
+   "model": "GLM 5.3 Flash (via Cursor)",
+   "inPerM": 0.15,
+   "cachedPerM": 0.029,
+   "outPerM": 0.5,
+   "src": "cursor_models",
+   "note": ""
+  },
+  {
+   "model": "Grok 4.7 (Cursor Models pool)",
+   "inPerM": 2,
+   "cachedPerM": 0.5,
+   "outPerM": 6,
+   "src": "cursor_models",
+   "note": "frontier; included-usage pool on Ultra"
+  },
+  {
+   "model": "Claude Opus 5.5 (Cursor Other Models)",
+   "inPerM": 4,
+   "cachedPerM": 0.2,
+   "outPerM": 20,
+   "src": "cursor_models",
+   "note": "frontier"
+  }
+ ],
+ "plan": {
+  "name": "Cursor Ultra",
+  "monthlyUSD": 200,
+  "src": "cursor_pricing",
+  "asOf": "2026-10-07",
+  "pools": "Two monthly pools: Cursor Models (Grok 4.7/4.6/4.5, Composer 2.5) and Other Models (third-party at API price). Boyd's dashboard additionally shows a Grok Bot weekly pool.",
+  "alternatives": [
+   {
+    "name": "Pro+",
+    "monthlyUSD": 60
+   },
+   {
+    "name": "Pro",
+    "monthlyUSD": 20
+   }
+  ]
+ },
+ "electricity": {
+  "centsPerKWh": 21.41,
+  "region": "Maryland residential average, July 2026 (U.S. avg 18.31\u00a2)",
+  "src": "eia_md",
+  "assumption": "Maryland assumed from Boyd's Ravens/Orioles/Terps interests; change it in the field above."
+ },
+ "quotes": [
+  {
+   "who": "@TheAhmadOsman",
+   "text": "GLM 5.3 Flash, DeepSeek V4.1 Flash, Qwen 3.8 Next Flash, and even Qwen 3.8 27B are all outperforming (in both intelligence and capabilities) every model that was considered \"frontier intelligence\" in Xmas 2025.",
+   "src": "ahmad_open",
+   "stance": "pro-local"
+  },
+  {
+   "who": "@TheAhmadOsman",
+   "text": "You don't pick an inference engine first. You pick a hardware strategy, a workload shape, and a serving model. The engine follows.",
+   "src": "ahmad_bible",
+   "stance": "method"
+  },
+  {
+   "who": "@viticci",
+   "text": "The personal assistants I use the most are now entirely powered by a model running locally on a Mac Studio.",
+   "src": "macstories",
+   "stance": "pro-local"
+  },
+  {
+   "who": "@Da7_Tech",
+   "text": "I use Bonsai for sensitive tasks. Still, I don't use local models for much of my daily routine. They aren't smart enough for what I need, and the open models that are actually capable require heavy-duty hardware I don't have.",
+   "src": "da7",
+   "stance": "skeptical"
+  },
+  {
+   "who": "MacStories",
+   "text": "By the time you've repaid your investment, you could have used the most expensive Anthropic subscription for several years, still saved money, and got better performance in return.",
+   "src": "macstories",
+   "stance": "cost-honest"
+  }
+ ],
+ "asOfRule": "As-of = the date the source states for its figure; 'read 2026-10-07' = no date stated, figure read by TokenMax today.",
+ "remasterNote": "Sat Oct 10 afternoon remaster: UI/workload refresh only. Hardware prices and benchmarks unchanged from researchedAt; no new public figures invented."
+}
