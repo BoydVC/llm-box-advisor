@@ -169,7 +169,7 @@
     284
    ],
    [
-    "Gmail (Miranda)",
+    "Gmail (Jordan)",
     240
    ],
    [
@@ -578,9 +578,9 @@
    "lastRun": "2026-09-15T10:40:39.471000Z"
   },
   {
-   "bot": "Vic Tutor",
+   "bot": "Sam Tutor",
    "botId": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-   "name": "Vic weeknight homework check-in",
+   "name": "Sam weeknight homework check-in",
    "cron": "15 18 * * *",
    "schedule": "6:15 PM ET, every day",
    "enabled": true,
@@ -668,9 +668,9 @@
    "lastRun": "2026-09-15T11:31:25.444000Z"
   },
   {
-   "bot": "Char Tutor",
+   "bot": "Alex Tutor",
    "botId": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-   "name": "Char weeknight homework check-in",
+   "name": "Alex weeknight homework check-in",
    "cron": "45 17 * * *",
    "schedule": "5:45 PM ET, every day",
    "enabled": true,
@@ -694,7 +694,7 @@
    "Michael \u00b7 Morning attention brief \u2194 Oscar \u00b7 Watch for Kia Finance statement (Sep 7 8:33 AM ET)",
    "Oscar \u00b7 Watch for Kia Finance statement \u2194 Brief \u00b7 Morning attention brief (Sep 14 8:42 AM ET)",
    "Ryan \u00b7 Weekly idea digest \u2194 Jim \u00b7 Daily podcast listen brief (Sep 14 7:07 AM ET)",
-   "Vic Tutor \u00b7 Vic weeknight homework check-in \u2194 Char Tutor \u00b7 Char weeknight homework check-in (Sep 15 7:14 PM ET)"
+   "Sam Tutor \u00b7 Sam weeknight homework check-in \u2194 Alex Tutor \u00b7 Alex weeknight homework check-in (Sep 15 7:14 PM ET)"
   ],
   "overlapCount": 4
  },
@@ -728,7 +728,7 @@
      58
     ],
     [
-     "Gmail (Miranda)",
+     "Gmail (Jordan)",
      39
     ]
    ],
@@ -848,7 +848,7 @@
    "activeDays": 19,
    "topApps": [
     [
-     "Gmail (Miranda)",
+     "Gmail (Jordan)",
      152
     ],
     [
@@ -903,7 +903,7 @@
      132
     ],
     [
-     "Gmail (Miranda)",
+     "Gmail (Jordan)",
      49
     ],
     [
@@ -965,7 +965,7 @@
   },
   {
    "id": "ff5dfcd2-09b9-49dd-952f-14893da73ab0",
-   "name": "Char Tutor",
+   "name": "Alex Tutor",
    "title": "8th Grade Tutor",
    "stepsInWindow": 152,
    "stepsPerActiveDay": 21.7,
@@ -993,14 +993,14 @@
    "artifactWrites30d": 0,
    "observedRhythm": [],
    "routines": [
-    "Char weeknight homework check-in"
+    "Alex weeknight homework check-in"
    ],
    "runsPerWeek": 7,
    "routineMinutesPerWeek": 8.4
   },
   {
    "id": "7e4990fe-38aa-4d6d-aa6b-c87baad5f8d1",
-   "name": "Vic Tutor",
+   "name": "Sam Tutor",
    "title": "6th Grade Tutor",
    "stepsInWindow": 144,
    "stepsPerActiveDay": 20.6,
@@ -1028,7 +1028,7 @@
    "artifactWrites30d": 0,
    "observedRhythm": [],
    "routines": [
-    "Vic weeknight homework check-in"
+    "Sam weeknight homework check-in"
    ],
    "runsPerWeek": 7,
    "routineMinutesPerWeek": 6.3
