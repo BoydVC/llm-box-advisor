@@ -1,12 +1,12 @@
 # 🖥️ Local LLM Box Advisor
 
-**Could Boyd run his Grok Bot fleet, or parts of it, on his own hardware, and what would it take?**
+**Could Alex run his Grok Bot fleet, or parts of it, on his own hardware, and what would it take?**
 This is an interactive local web app that answers that question from his fleet's *real* activity (Bot Island's logs) plus cited
 October 2026 hardware research. It covers a sizing calculator, cost and break-even against Cursor Ultra, a "which bots could go local" matrix,
 and a KPD Law Group privacy and on-prem section.
 
 Built by TokenMax on Oct 7, 2026 from Grok Bot weekly usage that would otherwise have reset unused. Idea #10 in `../SHORTLIST.md`,
-inspired by Boyd's bookmarks from @viticci (M5 Ultra local agents), @TheAhmadOsman (local-LLM "bible") and @Da7_Tech (Bonsai 27B for sensitive tasks).
+inspired by Alex's bookmarks from @viticci (M5 Ultra local agents), @TheAhmadOsman (local-LLM "bible") and @Da7_Tech (Bonsai 27B for sensitive tasks).
 
 ![Overview](screenshots/00-best-home.png)
 
@@ -107,6 +107,6 @@ llm-box-advisor/
 
 ---
 ## Repo notes
-- **Built:** Oct 7, 2026, by TokenMax (Boyd's Grok Bot) on the Grok Bot box.
+- **Built:** Oct 7, 2026, by TokenMax (Alex's Grok Bot) on the Grok Bot box.
 - **Run:** `./run.sh` (then open the localhost URL it prints).
 - Imported from `/workspace/tokenmax/llm-box-advisor` on Oct 23, 2026. node_modules, virtualenvs, logs and files over 20 MB were left out.

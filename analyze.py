@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Derive Boyd's fleet activity profile from Bot Island's collected data (read-only).
+"""Derive Alex's fleet activity profile from Bot Island's collected data (read-only).
 
 Input : /workspace/tokenmax/bot-island/data/fleet.json  (never modified)
 Output: data/workload.json
