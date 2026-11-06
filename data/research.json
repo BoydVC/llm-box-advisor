@@ -217,21 +217,21 @@
    "title": "@TheAhmadOsman: 'The bible for running LLMs locally' + 'Inference Engines for LLMs & Local AI Hardware (2026 Edition)'",
    "url": "https://x.com/TheAhmadOsman/status/2096725148057633093",
    "asOf": "2026-09-06",
-   "kind": "Boyd bookmark (practitioner guide)",
+   "kind": "Alex bookmark (practitioner guide)",
    "short": "@TheAhmadOsman"
   },
   "ahmad_open": {
    "title": "@TheAhmadOsman on open models vs Xmas-2025 frontier (quoted by @elonmusk)",
    "url": "https://x.com/TheAhmadOsman",
    "asOf": "2026-09-20",
-   "kind": "opinion (in Boyd's X feed scrape)",
+   "kind": "opinion (in Alex's X feed scrape)",
    "short": "@TheAhmadOsman"
   },
   "da7": {
    "title": "@Da7_Tech: 'My stack changed' (Devin Max, Droid Max, MiniMax, Hermes Agent, Bonsai 27B locally)",
    "url": "https://x.com/Da7_Tech/status/2100199909148307612",
    "asOf": "2026-09-16",
-   "kind": "Boyd bookmark (practitioner stack)",
+   "kind": "Alex bookmark (practitioner stack)",
    "short": "@Da7_Tech"
   },
   "aba512": {
@@ -938,7 +938,7 @@
   "monthlyUSD": 200,
   "src": "cursor_pricing",
   "asOf": "2026-10-07",
-  "pools": "Two monthly pools: Cursor Models (Grok 4.7/4.6/4.5, Composer 2.5) and Other Models (third-party at API price). Boyd's dashboard additionally shows a Grok Bot weekly pool.",
+  "pools": "Two monthly pools: Cursor Models (Grok 4.7/4.6/4.5, Composer 2.5) and Other Models (third-party at API price). Alex's dashboard additionally shows a Grok Bot weekly pool.",
   "alternatives": [
    {
     "name": "Pro+",
@@ -954,7 +954,7 @@
   "centsPerKWh": 21.41,
   "region": "Maryland residential average, July 2026 (U.S. avg 18.31\u00a2)",
   "src": "eia_md",
-  "assumption": "Maryland assumed from Boyd's Ravens/Orioles/Terps interests; change it in the field above."
+  "assumption": "Maryland assumed from Alex's Ravens/Orioles/Terps interests; change it in the field above."
  },
  "quotes": [
   {

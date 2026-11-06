@@ -185,7 +185,7 @@
     63
    ],
    [
-    "Boyd's PC",
+    "Alex's PC",
     60
    ],
    [
@@ -443,9 +443,9 @@
  },
  "routines": [
   {
-   "bot": "Boyd Family Times (archive)",
+   "bot": "Lakeside Family Times (archive)",
    "botId": "4b4afba1-ebe0-403c-8502-451e00717b07",
-   "name": "Morning Boyd Family Times",
+   "name": "Morning Lakeside Family Times",
    "cron": "0 5 * * *",
    "schedule": "5:00 AM ET, every day",
    "enabled": true,
@@ -746,7 +746,7 @@
   },
   {
    "id": "4b4afba1-ebe0-403c-8502-451e00717b07",
-   "name": "Boyd Family Times (archive)",
+   "name": "Lakeside Family Times (archive)",
    "title": "Morning Newspaper",
    "stepsInWindow": 719,
    "stepsPerActiveDay": 79.9,
@@ -765,7 +765,7 @@
      67
     ],
     [
-     "Boyd's PC",
+     "Alex's PC",
      31
     ]
    ],
@@ -778,7 +778,7 @@
    "artifactWrites30d": 0,
    "observedRhythm": [],
    "routines": [
-    "Morning Boyd Family Times"
+    "Morning Lakeside Family Times"
    ],
    "runsPerWeek": 7,
    "routineMinutesPerWeek": 108.5
@@ -812,7 +812,7 @@
      13
     ],
     [
-     "Boyd's PC",
+     "Alex's PC",
      7
     ]
    ],
@@ -1163,7 +1163,7 @@
   },
   {
    "id": "784bedfc-74d6-45a0-a291-762ff05bb0c6",
-   "name": "Boyd Family Times",
+   "name": "Lakeside Family Times",
    "title": "",
    "stepsInWindow": 0,
    "stepsPerActiveDay": 0,
@@ -1275,7 +1275,7 @@
   "other_models_pct": 0,
   "monthly_reset": "2026-10-20",
   "on_demand": "disabled",
-  "account": "Christopher Boyd Ultra",
+  "account": "Alex Rivera Ultra",
   "source": "Cursor spending dashboard (hard-reloaded by TokenMax daily-usage-check)",
   "gap_pts": 19.5,
   "reset_note": "Dashboard Sat Oct 10 ~01:16 PM ET after hard reload: Grok Bot weekly 4% used, Resets Oct 15 (6 days left). Cursor Models 1%, Other Models 0%, monthly reset Oct 20. On-demand disabled. Pace target ~23.5% (24.75% of week since Thu 7:42 PM reset \u00d7 95%). Behind by ~19.5 pts."

@@ -146,8 +146,8 @@ function lineChart(series, { w = 900, h = 240, months = 36, breakEven = null } =
 
 /* ---------- bot verdicts (judgment, grounded in the measured profile) ---------- */
 const VERDICT = {
-  "Boyd Family Times (archive)": ["go", "Batch summarization at 5 AM. Nobody waits on it, so speed barely matters. Heavy shell + calendar/Gmail reads, writes an HTML edition.", "Qwen3.8-27B or Flash-Next", "Medium (family calendar + email)"],
-  "Boyd Family Times": ["go", "Same newspaper job, now producing output files daily ~5:16 AM.", "Qwen3.8-27B or Flash-Next", "Medium"],
+  "Lakeside Family Times (archive)": ["go", "Batch summarization at 5 AM. Nobody waits on it, so speed barely matters. Heavy shell + calendar/Gmail reads, writes an HTML edition.", "Qwen3.8-27B or Flash-Next", "Medium (family calendar + email)"],
+  "Lakeside Family Times": ["go", "Same newspaper job, now producing output files daily ~5:16 AM.", "Qwen3.8-27B or Flash-Next", "Medium"],
   "Pods": ["go", "Podcast digest from RSS; summarization only. Local speech-to-text throughput was not researched (unknown).", "Qwen3.6-35B-A3B (fast MoE)", "Low"],
   "Brief": ["go", "Short structured morning brief (~2 min/run) from Calendar/Slack/Gmail. Ideal small-model job.", "Qwen3.6-35B-A3B", "Medium-high (work + family mail)"],
   "Ryan": ["go", "One weekly idea digest (~2 min). Trivial load.", "any 27B+", "Low"],
@@ -159,7 +159,7 @@ const VERDICT = {
   "Sam Tutor": ["hy", "Same pattern as Alex: browser and computer-use heavy, kid-facing.", "Qwen3.8-27B (VL); verify in harness", "High (minor)"],
   "Pam": ["hy", "Calendar scan is local-friendly. Gmail (Jordan) triage plus computer use (~90 s sessions) is harder.", "Flash-Next + cloud fallback", "High (family + spouse mail)"],
   "Dr. EggBot": ["hy", "Healthcheck routines are simple shell checks (local OK). Designing new bots is frontier-model judgment.", "local for checks; cloud for design", "Low"],
-  "Michael": ["no", "Chief of staff: 948 steps, 169 chats with Boyd, Slack-heavy, coordinates other bots. Orchestration and judgment are where frontier models still lead. Could hand subtasks to local helpers.", "Cloud frontier (+ local subagents)", "High"],
+  "Michael": ["no", "Chief of staff: 948 steps, 169 chats with Alex, Slack-heavy, coordinates other bots. Orchestration and judgment are where frontier models still lead. Could hand subtasks to local helpers.", "Cloud frontier (+ local subagents)", "High"],
   "Dwight": ["no", "Agentic coding. Cloud frontier models plus Cursor's harness are the point; local coding works but is slower and weaker (MacStories).", "Cloud (Cursor Ultra)", "Low"],
   "TokenMax": ["no", "Big builds like this one: long agentic sessions that exist to use included cloud usage.", "Cloud", "Low"],
 };
@@ -391,7 +391,7 @@ function matrix() {
   <div class="card" style="margin-top:14px">
   <div class="matrix-legend"><span><span class="pill go">Go local</span> batch / quiet</span><span><span class="pill hy">Hybrid</span> local + cloud fallback</span><span><span class="pill no">Keep cloud</span> frontier / orchestration</span></div>
   <table><thead><tr><th>Bot</th><th>Verdict</th><th class="num">Steps ${T.m}</th><th class="num">Runs/wk ${T.m}</th><th>Interactive load ${T.m}</th><th>Why</th><th>Suggested local model</th><th>Data sensitivity</th></tr></thead><tbody>
-  ${rows.map(([name, [v, why, model, sens]]) => { const b = byName[name] || {}; return `<tr class="row-${v}"><td><b>${esc(name)}</b><div class="tiny mut">${esc(b.title || "")}</div></td><td><span class="pill ${v}">${lab[v]}</span></td><td class="num">${b.stepsInWindow ? fmt(b.stepsInWindow) : `<span class="tiny mut">outputs only${b.artifactWrites30d ? ": " + b.artifactWrites30d + " files/30d" : ""}${b.observedRhythm && b.observedRhythm[0] ? ", ~" + ((b.observedRhythm[0].hour % 12) || 12) + ":" + String(b.observedRhythm[0].minute).padStart(2, "0") + (b.observedRhythm[0].hour < 12 ? " AM" : " PM") + " daily" : ""}</span>`}</td><td class="num">${b.runsPerWeek || "—"}</td><td class="small">${b.boydMessages ? b.boydMessages + " msgs from Boyd" : "—"}${b.computerUse ? ` · ${b.computerUse} computer-use` : ""}${b.browser ? ` · ${b.browser} pages` : ""}</td><td class="small">${esc(why)}</td><td class="small">${esc(model)}</td><td class="small">${esc(sens)}</td></tr>`; }).join("")}
+  ${rows.map(([name, [v, why, model, sens]]) => { const b = byName[name] || {}; return `<tr class="row-${v}"><td><b>${esc(name)}</b><div class="tiny mut">${esc(b.title || "")}</div></td><td><span class="pill ${v}">${lab[v]}</span></td><td class="num">${b.stepsInWindow ? fmt(b.stepsInWindow) : `<span class="tiny mut">outputs only${b.artifactWrites30d ? ": " + b.artifactWrites30d + " files/30d" : ""}${b.observedRhythm && b.observedRhythm[0] ? ", ~" + ((b.observedRhythm[0].hour % 12) || 12) + ":" + String(b.observedRhythm[0].minute).padStart(2, "0") + (b.observedRhythm[0].hour < 12 ? " AM" : " PM") + " daily" : ""}</span>`}</td><td class="num">${b.runsPerWeek || "—"}</td><td class="small">${b.boydMessages ? b.boydMessages + " msgs from Alex" : "—"}${b.computerUse ? ` · ${b.computerUse} computer-use` : ""}${b.browser ? ` · ${b.browser} pages` : ""}</td><td class="small">${esc(why)}</td><td class="small">${esc(model)}</td><td class="small">${esc(sens)}</td></tr>`; }).join("")}
   </tbody></table>
   <div class="mut tiny" style="margin-top:8px">Verdicts are TokenMax's judgment, based on the measured profile (tools used, run length, how interactive each bot is) and the sourced model capabilities. Qwen3.8-27B's vendor scores (SWE-bench Pro 61.7, OSWorld-Verified 84.3 ${src("qwen38_27b")}) are self-reported and not checked in your harness. Run any local candidate in shadow mode next to the cloud bot for a week before switching.</div></div>
   <div class="grid g2" style="margin-top:14px">
@@ -402,7 +402,7 @@ function matrix() {
       <li><b>Hybrid trial:</b> the tutors and Pam, with cloud fallback for computer use.</li>
       <li><b>Leave alone:</b> Michael, Dwight, TokenMax. Maybe give Michael local helper subagents.</li></ol></div>
     <div class="card"><h3>What "local" covers by bot type</h3><ul class="tight small">
-      <li>About ${fmt(W.bots.filter((b) => (VERDICT[b.name] || [])[0] === "go").reduce((a, b) => a + b.stepsInWindow, 0) / W.measured.stepsInWindow * 100)}% of logged steps come from "go local" bots ${T.m}. The Family Times archive alone accounts for ${fmt(byName["Boyd Family Times (archive)"]?.stepsInWindow)}.</li>
+      <li>About ${fmt(W.bots.filter((b) => (VERDICT[b.name] || [])[0] === "go").reduce((a, b) => a + b.stepsInWindow, 0) / W.measured.stepsInWindow * 100)}% of logged steps come from "go local" bots ${T.m}. The Family Times archive alone accounts for ${fmt(byName["Lakeside Family Times (archive)"]?.stepsInWindow)}.</li>
       <li>"Keep cloud" bots account for ${fmt(W.bots.filter((b) => (VERDICT[b.name] || [])[0] === "no").reduce((a, b) => a + b.stepsInWindow, 0) / W.measured.stepsInWindow * 100)}% of logged steps, mostly Michael. TokenMax and Dwight sessions are under-counted because they ran after the audit window.</li>
       <li>@Da7_Tech's split ${src("da7")}: a local model (Bonsai) for sensitive tasks and cloud for everything else. That's the hybrid pattern this matrix recommends.</li></ul></div>
   </div>`;
